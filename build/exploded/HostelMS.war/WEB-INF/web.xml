@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    
+    <!-- AddStudentServlet -->
+    <servlet>
+        <servlet-name>AddStudentServlet</servlet-name>
+        <servlet-class>com.hostel.controller.AddStudentServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddStudentServlet</servlet-name>
+        <url-pattern>/add_student.do</url-pattern>
+    </servlet-mapping>
+    
+    <!-- RoomRegisterServlet -->
+    <servlet>
+        <servlet-name>RoomRegisterServlet</servlet-name>
+        <servlet-class>com.hostel.controller.RoomRegisterServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RoomRegisterServlet</servlet-name>
+        <url-pattern>/room_register.do</url-pattern>
+    </servlet-mapping>
+    
+    <!-- AdminLoginRegisterServlet -->
+    <servlet>
+        <servlet-name>AdminLoginRegisterServlet</servlet-name>
+        <servlet-class>com.hostel.controller.AdminLoginRegisterServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AdminLoginRegisterServlet</servlet-name>
+        <url-pattern>/AdminLoginRegisterServlet</url-pattern>
+    </servlet-mapping>
+    
+    <!-- AdminLogoutServlet -->
+    <servlet>
+        <servlet-name>AdminLogoutServlet</servlet-name>
+        <servlet-class>com.hostel.controller.AdminLogoutServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AdminLogoutServlet</servlet-name>
+        <url-pattern>/AdminLogoutServlet</url-pattern>
+    </servlet-mapping>
+    
+    <!-- StudCrudServlet -->
+    <servlet>
+        <servlet-name>StudCrudServlet</servlet-name>
+        <servlet-class>com.hostel.controller.StudCrudServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>StudCrudServlet</servlet-name>
+        <url-pattern>/StudCrudServlet</url-pattern>
+    </servlet-mapping>
+    
+    <!-- AdminCRUDServlet -->
+    <servlet>
+        <servlet-name>AdminUpdateServlet</servlet-name>
+        <servlet-class>com.hostel.controller.AdminUpdateServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AdminUpdateServlet</servlet-name>
+        <url-pattern>/AdminUpdateServlet</url-pattern>
+    </servlet-mapping>
+    
+    <!-- AdminRRServlet -->
+    <servlet>
+        <servlet-name>AdminRRServlet</servlet-name>
+        <servlet-class>com.hostel.controller.AdminRRServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AdminRRServlet</servlet-name>
+        <url-pattern>/AdminRRServlet</url-pattern>
+    </servlet-mapping>
+    
+    <!-- StudLoginRegisterServlet -->
+    <servlet>
+        <servlet-name>StudLoginRegisterServlet</servlet-name>
+        <servlet-class>com.hostel.controller.StudLoginRegisterServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>StudLoginRegisterServlet</servlet-name>
+        <url-pattern>/StudLoginRegisterServlet</url-pattern>
+    </servlet-mapping>
+    
+    <!-- StudLogoutServlet -->
+    <servlet>
+        <servlet-name>StudLogoutServlet</servlet-name>
+        <servlet-class>com.hostel.controller.StudLogoutServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>StudLogoutServlet</servlet-name>
+        <url-pattern>/StudLogoutServlet</url-pattern>
+    </servlet-mapping>
+    
+    <!-- Error page -->
+    <error-page>
+        <exception-type>java.lang.Exception</exception-type>
+        <location>/Error.jsp</location>
+    </error-page>
+    
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <welcome-file-list>
+        <welcome-file>Welcome.html</welcome-file>
+    </welcome-file-list>
+</web-app>
+
